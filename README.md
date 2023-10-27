@@ -1,0 +1,2 @@
+# THIAGO FERREIRA AMARAL - UFAM
+turmas: EC01 e T4
