@@ -1,6 +1,6 @@
 #1
 def pedrap(x,y):
-    if x >= 0 and x < 7 and y >= 0 and y < 7:
+    if (x >= 0 and x < 7) and (y >= 0 and y < 7):
         return True
     else:
         return False
@@ -24,4 +24,13 @@ def carrocap(x,y):
         return True
     else: return False
     
-print(carrocap(5,4))
+#4 
+def tem_carroca_p(mao): 
+    for (x,y) in mao:
+        if carrocap(x,y) == True: return True
+        else: return False
+        
+#5
+def tem_carrocas(mao): 
+    return [(x,y) for (x,y) in mao if carrocap(x,y) == True]
+    
