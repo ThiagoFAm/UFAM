@@ -83,6 +83,17 @@ def tmv(pt, mao):
 
 #p2.4
 
-def retira(ks, xs):
-    result = [x for x in xs if x not in ks]
+def retira(ks, xs): 
+    return [x for x in xs if x not in ks]
+    
+
+def norep(xs): 
+    result = []
+    for i in xs:
+        if i in result:
+            pass
+        else:
+            result.append(i)
     return result
+
+print(norep([1,2,3,3,3,3,3,4,4,5,1,2]))
